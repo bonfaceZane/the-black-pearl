@@ -42,9 +42,9 @@
         }
     ],
     "targetDefaults": {
-    "start": {
-      "dependsOn": ["^build"]
-    },
+        "start": {
+            "dependsOn": ["^build"]
+        },
         "e2e-ci--**/*": {
             "dependsOn": ["^build"]
         }
