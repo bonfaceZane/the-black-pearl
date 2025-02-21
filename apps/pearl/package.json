@@ -1,15 +1,15 @@
 {
-    "name": "pearl",
+    "name": "@the-black-pearl/pearl",
     "main": "expo-router/entry",
     "version": "1.0.0",
     "scripts": {
-        "start": "expo start",
-        "reset-project": "node ./scripts/reset-project.js",
-        "android": "expo start --android",
-        "ios": "expo start --ios",
-        "web": "expo start --web",
-        "test": "jest --watchAll",
-        "lint": "expo lint"
+        "start": "nx exec -- expo start",
+        "reset-project": "nx exec -- node ./scripts/reset-project.js",
+        "android": "nx exec -- expo start --android",
+        "ios": "nx exec -- expo start --ios",
+        "web": "nx exec -- expo start --web",
+        "test": "nx exec -- jest --watchAll",
+        "lint": "nx exec -- expo lint"
     },
     "jest": {
         "preset": "jest-expo"
