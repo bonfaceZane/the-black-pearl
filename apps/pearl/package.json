@@ -54,7 +54,9 @@
         "react-native-svg": "*",
         "react-native-web": "*",
         "react-native-webview": "*",
-        "tailwindcss": "*"
+        "tailwindcss": "*",
+        "@legendapp/list": "*",
+        "@legendapp/state": "*"
     },
     "devDependencies": {
         "@babel/core": "*",
