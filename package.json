@@ -2,7 +2,12 @@
     "name": "@the-black-pearl/source",
     "version": "0.0.0",
     "license": "MIT",
-    "scripts": {},
+    "scripts": {
+        "lint": "nx run-many --target=lint --all",
+        "lint:fix": "nx run-many --target=lint --all --fix",
+        "format": "nx format:write",
+        "format:check": "nx format:check"
+    },
     "private": true,
     "dependencies": {
         "react": "~18.3.1",
