@@ -1,11 +1,11 @@
 name: Hello World
 
 on:
-  push:
-    branches: ['*']
+    push:
+        branches: ["*"]
 
 jobs:
-  hello_world:
-    steps:
-      - uses: eas/checkout
-      - run: echo "Hello, World"
+    hello_world:
+        steps:
+            - uses: eas/checkout
+            - run: echo "Hello, World"
