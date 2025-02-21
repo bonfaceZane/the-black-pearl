@@ -1,11 +1,15 @@
-import { Image, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { VStack } from "@/components/ui/vstack";
+import { useTranslation } from "react-i18next";
+import { Image } from "expo-image";
 
 export default function Home() {
+    const { t } = useTranslation("common");
+
     return (
         <ParallaxScrollView
             headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
@@ -17,11 +21,11 @@ export default function Home() {
             }
         >
             <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">Welcome! to home</ThemedText>
+                <ThemedText type="title">{t("title")}</ThemedText>
                 <HelloWave />
             </ThemedView>
             <VStack>
-                <ThemedText type="default">I am a Heading</ThemedText>
+                <ThemedText type="default">{t("description")}</ThemedText>
             </VStack>
         </ParallaxScrollView>
     );
