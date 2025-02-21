@@ -56,7 +56,8 @@
         "react-native-webview": "*",
         "tailwindcss": "*",
         "@legendapp/list": "*",
-        "@legendapp/state": "*"
+        "@legendapp/state": "*",
+        "convex": "*"
     },
     "devDependencies": {
         "@babel/core": "*",
