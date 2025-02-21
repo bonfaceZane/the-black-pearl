@@ -4,6 +4,7 @@ import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import { Checkbox } from "@/components/ui/checkbox";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
                 <ThemedText type="title">Welcome! to home</ThemedText>
                 <HelloWave />
             </ThemedView>
+            <Checkbox value={"test"} />
             <ThemedView style={styles.stepContainer}>
                 <ThemedText type="subtitle">Step 1: Try it</ThemedText>
                 <ThemedText>
