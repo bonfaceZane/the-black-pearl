@@ -37,6 +37,15 @@
         ],
         "experiments": {
             "typedRoutes": true
-        }
+        },
+        "extra": {
+            "router": {
+                "origin": false
+            },
+            "eas": {
+                "projectId": "44327e11-69be-47f8-bb3a-7d52848b2954"
+            }
+        },
+        "owner": "bonnyzane"
     }
 }
