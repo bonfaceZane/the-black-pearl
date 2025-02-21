@@ -35,8 +35,12 @@
         "pod-install": {
             "executor": "nx:run-commands",
             "options": {
-                "command": "cd ios && pod install",
-                "cwd": "apps/pearl"
+                "commands": [
+                    "npx expo prebuild -p ios --no-install",
+                    "cd ios && pod install"
+                ],
+                "cwd": "apps/pearl",
+                "parallel": false
             }
         },
         "web": {
