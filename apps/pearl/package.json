@@ -65,7 +65,9 @@
         "react-native-swiper": "*",
         "react-native-web": "*",
         "react-native-webview": "*",
-        "tailwindcss": "*"
+        "tailwindcss": "*",
+        "axios": "*",
+        "effect": "*"
     },
     "devDependencies": {
         "@babel/core": "*",

@@ -23,12 +23,6 @@ export default [
                     ],
                 },
             ],
-            'no-unused-vars': [
-                'error',
-                {
-                    ignorePattern: '^_',
-                },
-            ],
         },
     },
     {

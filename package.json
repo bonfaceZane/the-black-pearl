@@ -30,6 +30,8 @@
         "@gluestack-ui/image": "^0.1.15",
         "@legendapp/list": "^1.0.0-beta.8",
         "@legendapp/state": "^3.0.0-beta.26",
+        "axios": "^1.7.9",
+        "effect": "^3.13.2",
         "expo": "52.0.37",
         "expo-asset": "11.0.4",
         "expo-blur": "14.0.3",
