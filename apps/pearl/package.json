@@ -67,7 +67,8 @@
         "react-native-webview": "*",
         "tailwindcss": "*",
         "axios": "*",
-        "effect": "*"
+        "effect": "*",
+        "@gorhom/bottom-sheet": "*"
     },
     "devDependencies": {
         "@babel/core": "*",

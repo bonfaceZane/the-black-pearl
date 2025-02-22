@@ -28,6 +28,7 @@
         "@gluestack-ui/button": "^1.0.12",
         "@gluestack-ui/checkbox": "^0.1.37",
         "@gluestack-ui/image": "^0.1.15",
+        "@gorhom/bottom-sheet": "^5.1.1",
         "@legendapp/list": "^1.0.0-beta.8",
         "@legendapp/state": "^3.0.0-beta.26",
         "axios": "^1.7.9",
