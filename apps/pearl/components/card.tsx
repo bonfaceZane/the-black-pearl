@@ -15,7 +15,7 @@ type Props = {
 export function Card({ title, description, image }: Props) {
     return (
         <CardComponent
-            className="p-5  rounded-lg max-w-[360px] m-3 "
+            className="p-5 rounded-lg max-w-[360px] sm:w-full m-3"
             variant="elevated"
         >
             <Image
