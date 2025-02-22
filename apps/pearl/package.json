@@ -57,7 +57,8 @@
         "tailwindcss": "*",
         "@legendapp/list": "*",
         "@legendapp/state": "*",
-        "convex": "*"
+        "convex": "*",
+        "react-native-swiper": "*"
     },
     "devDependencies": {
         "@babel/core": "*",
