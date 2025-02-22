@@ -1,10 +1,9 @@
 import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { ThemedText } from "@/components/ThemedText";
 import { VStack } from "@/components/ui/vstack";
-import { useTranslation } from "react-i18next";
 import { Image } from "expo-image";
 import React from "react";
 import Swiper from "react-native-swiper";
+import { Card } from "@/components/card";
 
 const images = [
     "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=3083&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -14,8 +13,6 @@ const images = [
 ];
 
 export default function Home() {
-    const { t } = useTranslation("common");
-
     return (
         <ParallaxScrollView
             headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
@@ -27,6 +24,7 @@ export default function Home() {
                 >
                     {images.map((image) => (
                         <Image
+                            key={image}
                             style={{ height: 300 }}
                             source={{
                                 uri: image,
@@ -36,9 +34,7 @@ export default function Home() {
                 </Swiper>
             }
         >
-            <VStack className="">
-                <ThemedText type="default">{t("description")}</ThemedText>
-            </VStack>
+            <Card />
         </ParallaxScrollView>
     );
 }

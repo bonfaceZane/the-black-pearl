@@ -40,6 +40,32 @@ export default function TabLayout() {
                     ),
                 }}
             />
+            <Tabs.Screen
+                name="my-accounts"
+                options={{
+                    title: "my account",
+                    tabBarIcon: ({ color }) => (
+                        <IconSymbol
+                            size={28}
+                            name="person.fill"
+                            color={color}
+                        />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="settings"
+                options={{
+                    title: "settings",
+                    tabBarIcon: ({ color }) => (
+                        <IconSymbol
+                            size={28}
+                            name="person.fill"
+                            color={color}
+                        />
+                    ),
+                }}
+            />
         </Tabs>
     );
 }

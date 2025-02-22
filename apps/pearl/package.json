@@ -58,7 +58,8 @@
         "@legendapp/list": "*",
         "@legendapp/state": "*",
         "convex": "*",
-        "react-native-swiper": "*"
+        "react-native-swiper": "*",
+        "@expo/html-elements": "*"
     },
     "devDependencies": {
         "@babel/core": "*",
