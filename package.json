@@ -15,7 +15,11 @@
         "ios": "nx run pearl:run-ios",
         "kill-metro": "pkill -f cli.js start",
         "backend": "nx run pearl:backend",
-        "convex": "nx run pearl:convex"
+        "convex": "nx run pearl:convex",
+        "export": "nx run pearl:export",
+        "build-web": "nx run pearl:build-web",
+        "build-ios": "nx run pearl:build-ios",
+        "build-android": "nx run pearl:build-android"
     },
     "private": true,
     "dependencies": {

@@ -9,7 +9,11 @@
         "ios": "DARK_MODE=media nx exec -- expo start --ios",
         "web": "DARK_MODE=media nx exec -- expo start --web",
         "test": "nx exec -- jest --watchAll",
-        "lint": "nx exec -- expo lint"
+        "lint": "nx exec -- expo lint",
+        "export": "nx exec -- expo export --platform web",
+        "build-web": "nx exec -- expo build --platform web",
+        "build-ios": "nx exec -- expo build --platform ios",
+        "build-android": "nx exec -- expo build --platform android"
     },
     "jest": {
         "preset": "jest-expo"
