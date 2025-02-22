@@ -1,16 +1,16 @@
 {
     "expo": {
-        "name": "pearl",
-        "slug": "pearl",
+        "name": "the black pearl",
+        "slug": "the-black-pearl",
         "version": "1.0.0",
         "orientation": "portrait",
         "icon": "./assets/images/icon.png",
-        "scheme": "myapp",
+        "scheme": "theblackpearl",
         "userInterfaceStyle": "automatic",
         "newArchEnabled": true,
         "ios": {
             "supportsTablet": true,
-            "bundleIdentifier": "com.bonnyzane.pearl"
+            "bundleIdentifier": "com.baantu.theblackpearl"
         },
         "android": {
             "adaptiveIcon": {

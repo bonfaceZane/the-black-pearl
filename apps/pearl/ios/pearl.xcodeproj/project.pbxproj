@@ -364,8 +364,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bonnyzane.pearl;
-				PRODUCT_NAME = pearl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baantu.theblackpearl;
+				PRODUCT_NAME = theblackpearl;
 				SWIFT_OBJC_BRIDGING_HEADER = "pearl/pearl-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -392,8 +392,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bonnyzane.pearl;
-				PRODUCT_NAME = pearl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baantu.theblackpearl;
+				PRODUCT_NAME = theblackpearl;
 				SWIFT_OBJC_BRIDGING_HEADER = "pearl/pearl-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
