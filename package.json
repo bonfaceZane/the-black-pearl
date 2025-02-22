@@ -17,6 +17,7 @@
         "backend": "nx run pearl:backend",
         "convex": "nx run pearl:convex",
         "export": "nx run pearl:export",
+        "deploy-web": "nx run pearl:deploy-web",
         "build-web": "nx run pearl:build-web",
         "build-ios": "nx run pearl:build-ios",
         "build-android": "nx run pearl:build-android"

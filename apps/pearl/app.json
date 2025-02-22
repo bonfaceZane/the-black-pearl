@@ -1,7 +1,7 @@
 {
     "expo": {
         "name": "the black pearl",
-        "slug": "the-black-pearl",
+        "slug": "pearl",
         "version": "1.0.0",
         "orientation": "portrait",
         "icon": "./assets/images/icon.png",

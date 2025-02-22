@@ -11,7 +11,7 @@
         "test": "nx exec -- jest --watchAll",
         "lint": "nx exec -- expo lint",
         "export": "nx exec -- expo export --platform web",
-        "build-web": "nx exec -- expo build --platform web",
+        "deploy-web": " eas deploy --prod --platform web",
         "build-ios": "nx exec -- expo build --platform ios",
         "build-android": "nx exec -- expo build --platform android"
     },
