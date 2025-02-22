@@ -25,8 +25,6 @@ export default function Home() {
             headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
             headerImage={
                 <Swiper
-                    showsButtons={false}
-                    showsPagination={false}
                     autoplay={true}
                 >
                     {images.map((image) => (
