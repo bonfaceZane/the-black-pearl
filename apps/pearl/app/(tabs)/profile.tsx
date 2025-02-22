@@ -2,8 +2,12 @@ import { StyleSheet } from 'react-native'
 import ParallaxScrollView from '@/components/ParallaxScrollView'
 import { IconSymbol } from '@/components/ui/IconSymbol'
 import { Button, ButtonText } from '@/components/ui/button'
+import { useTranslation } from 'react-i18next'
+import { VStack } from '@/components/ui/vstack'
 
 export default function Profile() {
+    const { t } = useTranslation()
+
     return (
         <ParallaxScrollView
             headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
@@ -15,10 +19,14 @@ export default function Profile() {
                     style={styles.headerImage}
                 />
             }
+            className="h-96"
         >
-            <Button>
-                <ButtonText>Button</ButtonText>
-            </Button>
+            <VStack className="p-4">
+                <Button>
+                    <ButtonText>{t('logout')}</ButtonText>
+                </Button>
+            </VStack>
+
         </ParallaxScrollView>
     )
 }
