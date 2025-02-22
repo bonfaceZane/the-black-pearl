@@ -32,18 +32,22 @@ export default function TabLayout() {
                 options={{
                     title: 'discover',
                     tabBarIcon: ({ color }) => (
-                        <IconSymbol size={28} name="paperplane" color={color} />
+                        <IconSymbol
+                            size={28}
+                            name="globe.europe.africa"
+                            color={color}
+                        />
                     ),
                 }}
             />
             <Tabs.Screen
-                name="filter"
+                name="compass"
                 options={{
-                    title: 'Filter',
+                    title: 'compass',
                     tabBarIcon: ({ color }) => (
                         <IconSymbol
                             size={28}
-                            name="slider.horizontal.3"
+                            name="compass.drawing"
                             color={color}
                         />
                     ),
@@ -78,7 +82,7 @@ export default function TabLayout() {
                     tabBarIcon: ({ color }) => (
                         <IconSymbol
                             size={28}
-                            name="person.2.badge.key"
+                            name="person.2.badge.gearshape"
                             color={color}
                         />
                     ),
