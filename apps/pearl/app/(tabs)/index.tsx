@@ -45,8 +45,6 @@ export default function Home() {
                 data={data}
                 renderItem={({ item }) => <Card {...item} />}
                 estimatedItemSize={100}
-                alignItemsAtEnd
-                maintainScrollAtEnd
                 maintainScrollAtEndThreshold={0.1}
             />
         </ParallaxScrollView>
