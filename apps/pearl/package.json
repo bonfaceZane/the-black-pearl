@@ -78,7 +78,8 @@
         "jscodeshift": "*",
         "react-devtools": "*",
         "react-test-renderer": "*",
-        "typescript": "*"
+        "typescript": "*",
+        "prettier-plugin-tailwindcss": "*"
     },
     "private": true
 }

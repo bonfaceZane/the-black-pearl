@@ -1,10 +1,10 @@
-import { ThemedText } from "@/components/ThemedText";
-import { VStack } from "@/components/ui/vstack";
+import { ThemedText } from '@/components/ThemedText'
+import { VStack } from '@/components/ui/vstack'
 
 export default function Inbox() {
     return (
-        <VStack className="justify-center items-center flex-1">
+        <VStack className="flex-1 items-center justify-center">
             <ThemedText>Inbox</ThemedText>
         </VStack>
-    );
+    )
 }

@@ -1,27 +1,27 @@
-import { Tabs } from "expo-router";
-import React from "react";
-import { Platform } from "react-native";
+import { Tabs } from 'expo-router'
+import React from 'react'
+import { Platform } from 'react-native'
 
-import { HapticTab } from "@/components/HapticTab";
-import { IconSymbol } from "@/components/ui/IconSymbol";
-import TabBarBackground from "@/components/ui/TabBarBackground";
-import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme";
+import { HapticTab } from '@/components/HapticTab'
+import { IconSymbol } from '@/components/ui/IconSymbol'
+import TabBarBackground from '@/components/ui/TabBarBackground'
+import { Colors } from '@/constants/Colors'
+import { useColorScheme } from '@/hooks/useColorScheme'
 
 export default function TabLayout() {
-    const colorScheme = useColorScheme();
+    const colorScheme = useColorScheme()
 
     return (
         <Tabs
             screenOptions={{
-                tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+                tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
                 headerShown: false,
                 tabBarButton: HapticTab,
                 tabBarBackground: TabBarBackground,
                 tabBarStyle: Platform.select({
                     ios: {
                         // Use a transparent background on iOS to show the blur effect
-                        position: "absolute",
+                        position: 'absolute',
                     },
                     default: {},
                 }),
@@ -30,16 +30,16 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="index"
                 options={{
-                    title: "discover",
+                    title: 'discover',
                     tabBarIcon: ({ color }) => (
                         <IconSymbol size={28} name="paperplane" color={color} />
                     ),
                 }}
             />
-                <Tabs.Screen
+            <Tabs.Screen
                 name="filter"
                 options={{
-                    title: "Filter",
+                    title: 'Filter',
                     tabBarIcon: ({ color }) => (
                         <IconSymbol
                             size={28}
@@ -49,10 +49,10 @@ export default function TabLayout() {
                     ),
                 }}
             />
-             <Tabs.Screen
+            <Tabs.Screen
                 name="timeline"
                 options={{
-                    title: "timeline",
+                    title: 'timeline',
                     tabBarIcon: ({ color }) => (
                         <IconSymbol
                             size={28}
@@ -65,7 +65,7 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="inbox"
                 options={{
-                    title: "inbox",
+                    title: 'inbox',
                     tabBarIcon: ({ color }) => (
                         <IconSymbol size={28} name="bubble" color={color} />
                     ),
@@ -74,7 +74,7 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="profile"
                 options={{
-                    title: "profile",
+                    title: 'profile',
                     tabBarIcon: ({ color }) => (
                         <IconSymbol
                             size={28}
@@ -85,5 +85,5 @@ export default function TabLayout() {
                 }}
             />
         </Tabs>
-    );
+    )
 }
