@@ -36,7 +36,7 @@ export default function TabLayout() {
                     ),
                 }}
             />
-            <Tabs.Screen
+                <Tabs.Screen
                 name="filter"
                 options={{
                     title: "Filter",
@@ -44,6 +44,19 @@ export default function TabLayout() {
                         <IconSymbol
                             size={28}
                             name="slider.horizontal.3"
+                            color={color}
+                        />
+                    ),
+                }}
+            />
+             <Tabs.Screen
+                name="timeline"
+                options={{
+                    title: "timeline",
+                    tabBarIcon: ({ color }) => (
+                        <IconSymbol
+                            size={28}
+                            name="calendar.day.timeline.left"
                             color={color}
                         />
                     ),

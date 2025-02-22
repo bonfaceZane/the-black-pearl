@@ -20,33 +20,29 @@ export function Card({ title, description, image }: Props) {
         >
             <Image
                 source={{
-                    uri: "https://gluestack.github.io/public-blog-video-assets/saree.png",
+                    uri: image,
                 }}
                 className="mb-6 h-[240px] w-full rounded-md aspect-[4/3]"
                 alt="image"
             />
-            <Text className="text-sm font-normal mb-2 text-typography-700">
-                Fashion Clothing
-            </Text>
-            <VStack className="mb-6">
-                <Heading size="md" className="mb-4">
-                    Cotton Kurta
+            <VStack className="gap-1 mb-2">
+                <Heading size="md" className="">
+                    {title}
                 </Heading>
                 <Text size="sm">
-                    Floral embroidered notch neck thread work cotton kurta in
-                    white and black.
+                   {description}
                 </Text>
             </VStack>
             <HStack className="gap-2">
                 <Button className="w-1/2">
-                    <ButtonText size="sm">Add to cart</ButtonText>
+                    <ButtonText size="sm">explore</ButtonText>
                 </Button>
                 <Button
                     variant="outline"
                     className="w-1/2"
                 >
                     <ButtonText size="sm" className="text-typography-600">
-                        Wishlist
+                        wishlist
                     </ButtonText>
                 </Button>
             </HStack>
