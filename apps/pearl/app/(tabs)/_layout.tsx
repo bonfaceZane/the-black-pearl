@@ -32,35 +32,40 @@ export default function TabLayout() {
                 options={{
                     title: "discover",
                     tabBarIcon: ({ color }) => (
+                        <IconSymbol size={28} name="paperplane" color={color} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="filter"
+                options={{
+                    title: "Filter",
+                    tabBarIcon: ({ color }) => (
                         <IconSymbol
                             size={28}
-                            name="paperplane.fill"
+                            name="slider.horizontal.3"
                             color={color}
                         />
                     ),
                 }}
             />
             <Tabs.Screen
-                name="my-accounts"
+                name="inbox"
                 options={{
-                    title: "my account",
+                    title: "inbox",
                     tabBarIcon: ({ color }) => (
-                        <IconSymbol
-                            size={28}
-                            name="person.fill"
-                            color={color}
-                        />
+                        <IconSymbol size={28} name="bubble" color={color} />
                     ),
                 }}
             />
             <Tabs.Screen
-                name="settings"
+                name="profile"
                 options={{
-                    title: "settings",
+                    title: "profile",
                     tabBarIcon: ({ color }) => (
                         <IconSymbol
                             size={28}
-                            name="person.fill"
+                            name="person.2.badge.key"
                             color={color}
                         />
                     ),
