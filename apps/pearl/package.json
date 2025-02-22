@@ -68,7 +68,8 @@
         "tailwindcss": "*",
         "axios": "*",
         "effect": "*",
-        "@gorhom/bottom-sheet": "*"
+        "@gorhom/bottom-sheet": "*",
+        "expo-camera": "*"
     },
     "devDependencies": {
         "@babel/core": "*",
