@@ -1,9 +1,9 @@
 import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { VStack } from "@/components/ui/vstack";
 import { Image } from "expo-image";
 import React from "react";
 import Swiper from "react-native-swiper";
 import { Card } from "@/components/card";
+import { LegendList } from "@legendapp/list";
 
 const images = [
     "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=3083&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -12,6 +12,13 @@ const images = [
     "https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 
+const data = [
+    {
+        title: "Title",
+        description: "Description",
+        image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=3083&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+];
 export default function Home() {
     return (
         <ParallaxScrollView
@@ -34,7 +41,14 @@ export default function Home() {
                 </Swiper>
             }
         >
-            <Card />
+            <LegendList
+                data={data}
+                renderItem={({ item }) => <Card {...item} />}
+                estimatedItemSize={100}
+                alignItemsAtEnd
+                maintainScrollAtEnd
+                maintainScrollAtEndThreshold={0.1}
+            />
         </ParallaxScrollView>
     );
 }

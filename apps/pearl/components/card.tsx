@@ -6,9 +6,18 @@ import { Text } from "@/components/ui/text";
 import { VStack } from "@/components/ui/vstack";
 import { Image } from "expo-image";
 
-export function Card() {
+type Props = {
+    title: string;
+    description: string;
+    image: string;
+};
+
+export function Card({ title, description, image }: Props) {
     return (
-        <CardComponent className="p-5 rounded-lg max-w-[360px] m-3">
+        <CardComponent
+            className="p-5  rounded-lg max-w-[360px] m-3"
+            variant="elevated"
+        >
             <Image
                 source={{
                     uri: "https://gluestack.github.io/public-blog-video-assets/saree.png",
