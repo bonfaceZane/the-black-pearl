@@ -1,0 +1,83 @@
+{
+    "name": "pearl",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/pearl",
+    "projectType": "application",
+    "targets": {
+        "convex": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "bunx convex dev",
+                "cwd": "apps/pearl"
+            }
+        },
+        "backend": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "cargo run",
+                "cwd": "apps/pearl/backend"
+            }
+        },
+        "start": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "expo start",
+                "cwd": "apps/pearl"
+            }
+        },
+        "run-android": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "expo start --android",
+                "cwd": "apps/pearl"
+            }
+        },
+        "run-ios": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "expo start --ios",
+                "cwd": "apps/pearl"
+            }
+        },
+        "sync-deps": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "expo install",
+                "cwd": "apps/pearl"
+            }
+        },
+        "pod-install": {
+            "executor": "nx:run-commands",
+            "options": {
+                "commands": [
+                    "npx expo prebuild -p ios --no-install",
+                    "cd ios && pod install"
+                ],
+                "cwd": "apps/pearl",
+                "parallel": false
+            }
+        },
+        "web": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "expo start --web",
+                "cwd": "apps/pearl"
+            }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "jest --watchAll",
+                "cwd": "apps/pearl"
+            }
+        },
+        "lint": {
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["apps/pearl/**/*"]
+            }
+        }
+    },
+    "tags": []
+}
