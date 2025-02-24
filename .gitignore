@@ -10,7 +10,20 @@ node_modules
 
 # build
 **/android
-**/ios
+
+
+# iOS
+**/ios/**
+*.ipa
+*.dSYM.zip
+*.dSYM
+.DS_Store
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
 
 # IDEs and editors
 /.idea
