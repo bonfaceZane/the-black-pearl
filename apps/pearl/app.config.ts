@@ -11,6 +11,7 @@ const APP_NAME = 'the black pearl'
 const BUNDLE_IDENTIFIER = 'com.baantu.theblackpearl'
 const PACKAGE_NAME = 'com.baantu.theblackpearl'
 const ICON = './assets/images/icon.png'
+const WEB_ICON = './assets/images/favicon.png'
 const ADAPTIVE_ICON = './assets/images/icon.png'
 const SCHEME = 'theblackpearl'
 
@@ -57,7 +58,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         web: {
             bundler: 'metro',
             output: 'static',
-            favicon: './assets/images/favicon.png',
+            favicon: WEB_ICON,
         },
         plugins: [
             'expo-router',
