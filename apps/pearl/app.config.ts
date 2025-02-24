@@ -10,8 +10,8 @@ const OWNER = 'bonnyzane'
 const APP_NAME = 'the black pearl'
 const BUNDLE_IDENTIFIER = 'com.baantu.theblackpearl'
 const PACKAGE_NAME = 'com.baantu.theblackpearl'
-const ICON = './assets/images/icons/iOS-Prod.png'
-const ADAPTIVE_ICON = './assets/images/icons/Android-Prod.png'
+const ICON = './assets/images/icon.png'
+const ADAPTIVE_ICON = './assets/images/icon.png'
 const SCHEME = 'theblackpearl'
 
 export default ({ config }: ConfigContext): ExpoConfig => {
@@ -109,8 +109,8 @@ export const getDynamicAppConfig = (
         name: `${APP_NAME} Development`,
         bundleIdentifier: `${BUNDLE_IDENTIFIER}.dev`,
         packageName: `${PACKAGE_NAME}.dev`,
-        icon: './assets/images/icons/iOS-Dev.png',
-        adaptiveIcon: './assets/images/icons/Android-Dev.png',
+        icon: ICON,
+        adaptiveIcon: ADAPTIVE_ICON,
         scheme: `${SCHEME}-dev`,
     }
 }
