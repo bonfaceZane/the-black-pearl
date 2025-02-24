@@ -14,7 +14,8 @@
         "export": "nx exec -- expo export --platform web",
         "deploy-web": " eas deploy --prod",
         "build-ios": "nx exec -- expo build --platform ios",
-        "build-android": "nx exec -- expo build --platform android"
+        "build-android": "nx exec -- expo build --platform android",
+        "be": "npx convex dev"
     },
     "jest": {
         "preset": "jest-expo"
@@ -71,6 +72,8 @@
         "react-native-swiper": "*",
         "react-native-web": "*",
         "react-native-webview": "*",
+        "@convex-dev/rate-limiter": "*",
+        "convex-helpers": "*",
         "tailwindcss": "*"
     },
     "devDependencies": {
