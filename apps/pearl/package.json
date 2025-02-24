@@ -2,6 +2,7 @@
     "name": "@the-black-pearl/pearl",
     "main": "expo-router/entry",
     "version": "1.0.0",
+    "packageManager": "bun@1.2.0",
     "scripts": {
         "start": "nx exec -- expo start",
         "reset-project": "nx exec -- node ./scripts/reset-project.js",
