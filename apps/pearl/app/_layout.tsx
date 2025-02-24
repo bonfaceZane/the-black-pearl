@@ -47,7 +47,6 @@ export default function RootLayout() {
                     />
                     <Stack.Screen name="trip-details" />
                     <Stack.Screen name="+not-found" />
-                    <Stack.Screen name="trip-details" />
                 </Stack>
                 <StatusBar style="auto" />
             </ThemeProvider>
