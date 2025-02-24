@@ -1,5 +1,5 @@
-import { VStack } from "@/components/ui/vstack"
-import { Text } from "@/components/ui/text"
+import { VStack } from '@/components/ui/vstack'
+import { Text } from '@/components/ui/text'
 
 export const TripDetails = () => {
     return (
