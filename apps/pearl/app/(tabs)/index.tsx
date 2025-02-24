@@ -1,51 +1,67 @@
-import { StyleSheet } from "react-native";
-import { HelloWave } from "@/components/HelloWave";
-import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
-import { VStack } from "@/components/ui/vstack";
-import { useTranslation } from "react-i18next";
-import { Image } from "expo-image";
+import ParallaxScrollView from '@/components/ParallaxScrollView'
+import { Image } from 'expo-image'
+import React from 'react'
+import Swiper from 'react-native-swiper'
+import { Card } from '@/components/card'
+import { LegendList } from '@legendapp/list'
 
+const images = [
+    'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=3083&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1505832018823-50331d70d237?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D',
+    'https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+]
+
+const data = [
+    {
+        title: 'See Bali',
+        description:
+            'Experience the luxury of Bercelona Hotspottz, where elegance meets sophistication',
+        image: 'https://gluestack.github.io/public-blog-video-assets/saree.png',
+    },
+    {
+        title: 'Bercelona Hotspottz',
+        description:
+            'Experience the luxury of Bercelona Hotspottz, where elegance meets sophistication',
+        image: 'https://plus.unsplash.com/premium_photo-1689370875678-804d07de959f?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    },
+    {
+        title: 'Eplore Indonesia',
+        description:
+            'Experience the luxury of Bercelona Hotspottz, where elegance meets sophistication',
+        image: 'https://plus.unsplash.com/premium_photo-1673140983133-9aebf7c2d456?q=80&w=3136&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    },
+    {
+        title: 'the undiscovered paths of Limburg',
+        description:
+            'Cycle with a group of friends, this sunday in slopes of Limburg',
+        image: 'https://images.unsplash.com/photo-1739889399685-c73e63753981?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    },
+]
 export default function Home() {
-    const { t } = useTranslation("common");
-
     return (
         <ParallaxScrollView
-            headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
+            headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
             headerImage={
-                <Image
-                    source={require("@/assets/images/partial-react-logo.png")}
-                    style={styles.reactLogo}
-                />
+                <Swiper autoplay={true}>
+                    {images.map((image) => (
+                        <Image
+                            key={image}
+                            style={{ height: 300 }}
+                            source={{
+                                uri: image,
+                            }}
+                        />
+                    ))}
+                </Swiper>
             }
         >
-            <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">{t("title")}</ThemedText>
-                <HelloWave />
-            </ThemedView>
-            <VStack>
-                <ThemedText type="default">{t("description")}</ThemedText>
-            </VStack>
+            <LegendList
+                data={data}
+                renderItem={({ item }) => <Card {...item} />}
+                estimatedItemSize={100}
+                maintainScrollAtEndThreshold={0.1}
+            />
         </ParallaxScrollView>
-    );
+    )
 }
-
-const styles = StyleSheet.create({
-    titleContainer: {
-        flexDirection: "row",
-        alignItems: "center",
-        gap: 8,
-    },
-    stepContainer: {
-        gap: 8,
-        marginBottom: 8,
-    },
-    reactLogo: {
-        height: 178,
-        width: 290,
-        bottom: 0,
-        left: 0,
-        position: "absolute",
-    },
-});
