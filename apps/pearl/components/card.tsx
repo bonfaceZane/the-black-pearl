@@ -6,6 +6,7 @@ import { VStack } from '@/components/ui/vstack'
 import { HStack } from './ui/hstack'
 import { Image } from '@/components/ui/image'
 import { Link } from 'expo-router'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
     title: string
@@ -14,6 +15,7 @@ type Props = {
 }
 
 export function Card({ title, description, image }: Props) {
+    const { t } = useTranslation('components')
     return (
         <Link href="/trip-details">
             <CardComponent
@@ -39,7 +41,7 @@ export function Card({ title, description, image }: Props) {
                     </Button>
                     <Button variant="outline" className="w-1/2">
                         <ButtonText size="sm" className="text-typography-600">
-                            wishlist
+                            {t('bookmark')}
                         </ButtonText>
                     </Button>
                 </HStack>

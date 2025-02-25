@@ -8,5 +8,8 @@
         "description": "The Black Pearl is a 2024 American action-thriller film directed by James Mangold and written by Mangold and Scott Frank. It is based on the 1998 novel The Black Pearl by James Ellroy. The film stars Tom Cruise, Dwayne Johnson, and Nicole Kidman, with John Malkovich, Bill Paxton, and Michael Caine in supporting roles. The film is set in the 19th century, and follows a group of pirates who attempt to steal a treasure ship that has been hijacked by a band of mercenaries.",
         "button": "Watch Now",
         "footer": "© 2024 The Black Pearl. All rights reserved."
-    }
+    },
+    "bookmark": "bookmark",
+    "logout": "logout",
+    "login": "login"
 }
